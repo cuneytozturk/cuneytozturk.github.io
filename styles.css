@@ -61,6 +61,10 @@ a:visited {
   color: white;
 }
 
+a {
+  color: white;
+}
+
 /* Hide the navigation menu by default */
 .mobile-nav {
   display: none;
