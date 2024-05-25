@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+}
+h2 {
+  border-bottom: 1px solid grey;
+  color: white;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: white;
+}
+h4 {
+  color: grey;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  line-height: 1.6;
+}
+
+.main,
+.sidebar-left,
+.sidebar {
+  width: 100%;
+}
+
+.sidebar-left,
+.sidebar {
+  padding: 20px;
+  background-color: black;
+}
+
+.sidebar img {
+  width: 50%;
+  height: auto;
+}
+
+.work-experience {
+  margin-top: 20px;
+}
+
+.education {
+  padding-bottom: 20px;
+}
+
+a:visited {
+  color: white;
+}
+
+/* Hide the navigation menu by default */
+.mobile-nav {
+  display: none;
+}
+
+.hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures the hamburger is above other elements */
+  background-color: black; /* Dark background color */
+  color: #c5c8c6; /* Light text color */
+}
+
+/* Show the navigation menu when the hamburger button is in the 'open' state */
+.hamburger.open + .mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  background-color: #0c0c0c; /* Dark background color */
+  color: #c5c8c6; /* Light text color */
+}
+
+.mobile-nav a {
+  color: #c5c8c6; /* Light text color */
+}
+
+.mobile-nav a:visited {
+  color: #c5c8c6; /* Light text color for visited links */
+}
+
+@media screen and (min-width: 601px) {
+  .main {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar-left,
+  .sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidebar-left {
+    left: 0;
+    top: 100px;
+  }
+
+  .sidebar {
+    right: 0;
+    word-wrap: break-word;
+  }
+
+  .work-experience {
+    margin-top: 100px;
+  }
+
+  .education {
+    padding-bottom: 100vh;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
