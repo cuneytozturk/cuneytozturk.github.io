@@ -84,7 +84,7 @@ a {
 /* Show the navigation menu when the hamburger button is in the 'open' state */
 .hamburger.open + .mobile-nav {
   position: fixed;
-  top: 0;
+  top: 50;
   right: 0;
   display: block;
   background-color: #0c0c0c; /* Dark background color */
