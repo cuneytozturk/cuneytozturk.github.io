@@ -65,7 +65,6 @@ a {
   color: white;
 }
 
-/* Hide the navigation menu by default */
 .mobile-nav {
   display: none;
 }
@@ -76,27 +75,26 @@ a {
   right: 0;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1000; /* Ensures the hamburger is above other elements */
-  background-color: black; /* Dark background color */
-  color: #c5c8c6; /* Light text color */
+  z-index: 1000;
+  background-color: black;
+  color: #c5c8c6;
 }
 
-/* Show the navigation menu when the hamburger button is in the 'open' state */
 .hamburger.open + .mobile-nav {
   position: fixed;
   top: 50;
   right: 0;
   display: block;
-  background-color: #0c0c0c; /* Dark background color */
-  color: #c5c8c6; /* Light text color */
+  background-color: #0c0c0c;
+  color: #c5c8c6;
 }
 
 .mobile-nav a {
-  color: #c5c8c6; /* Light text color */
+  color: #c5c8c6;
 }
 
 .mobile-nav a:visited {
-  color: #c5c8c6; /* Light text color for visited links */
+  color: #c5c8c6;
 }
 
 @media screen and (min-width: 601px) {
